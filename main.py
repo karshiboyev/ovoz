@@ -6,8 +6,7 @@ from aiogram.filters import Command
 from aiogram.fsm.storage.memory import MemoryStorage
 import tempfile  # Vaqtinchalik fayl yaratish uchun
 
-TOKEN = "7572700059:AAHCU4Kf4RrLIZf7EEnqKh2ZJ1_YjxTOyrY"
-
+TOKEN = os.getenv("Token")
 bot = Bot(token=TOKEN)
 dp = Dispatcher(storage=MemoryStorage())
 
